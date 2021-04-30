@@ -7,13 +7,13 @@ class Student{
 
 const PI = 3.14;
 
-function numbersAdd(num1, num2) {
+export default function numbersAdd(num1, num2) {
     console.log(num1 + num2)
 }
-function numbersMultiply(num1, num2) {
+export function numbersMultiply(num1, num2) {
     console.log(num1 * num2)
 }
-function numbersDivision(num1, num2) {
+export function numbersDivision(num1, num2) {
     console.log(num1 / num2)
 }
 
@@ -22,4 +22,4 @@ function sayHello(names) {
 }
 
 
-export { numbersAdd, numbersDivision, sayHello}
+// export { numbersAdd, numbersDivision, sayHello}
