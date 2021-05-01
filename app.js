@@ -16,6 +16,9 @@
 // addition(5, 9);
 // numbersDivision(40, 5);
 
-import Student from './utils.js';
+import Student, { test, PI } from './utils.js';
 const stdn = new Student('Eric', 4);
+test();
+
+console.log(PI)
 

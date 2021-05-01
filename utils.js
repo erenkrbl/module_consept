@@ -9,7 +9,7 @@ export default class Student{
     }
 }
 
-const PI = 3.14;
+export const PI = 3.14;
 
 export function numbersAdd(num1, num2) {
     console.log(num1 + num2)
@@ -27,3 +27,7 @@ function sayHello(names) {
 
 
 // export { numbersAdd, numbersDivision, sayHello}
+
+export const test = () => {
+    console.log('test');
+}
