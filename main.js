@@ -1,13 +1,3 @@
-// const joke = new JokeApi;
+import appStart from './screen.js';
 
-// joke.randomJokeBring();
-
-// const photo = new UnsplashApi();
-
-// photo.randomPhotoBring();
-
-// const translate = new TranslateApi("How are you today");
-
-// translate.translatedDid();
-
-const screen = new Screen();
+appStart();

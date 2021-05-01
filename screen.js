@@ -1,3 +1,7 @@
+import photoBring from './unsplash_api.js';
+import jokeBring from './joke_api.js';
+import translatedDid from './translate_api.js';
+
 class Screen {
     constructor(){
         this.jokeBringBtn = document.querySelector('.joke-bring-button');
@@ -5,9 +9,9 @@ class Screen {
     }
 
     async jokeBring(){
-        const randomPhoto = await new UnsplashApi().randomPhotoBring();
-        const randomJoke = await new JokeApi().randomJokeBring();
-        const translate = await new TranslateApi(randomJoke).translatedDid();
+        const randomPhoto = await new photoBring();
+        const randomJoke = await new jokeBring();
+        const translate = await new translatedDid(randomJoke);
 
         const allResult = {
             randomPhoto,
@@ -41,4 +45,7 @@ class Screen {
           </div>
         </div>
       </div>`};
+}
+export default function appStart(){
+  new Screen();
 }

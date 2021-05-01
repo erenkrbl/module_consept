@@ -25,3 +25,8 @@ class TranslateApi{
     }
 }
 
+export default function translatedDid(translateTextDid){
+    const translate = new TranslateApi(translateTextDid).translatedDid();
+    return translate;
+}
+

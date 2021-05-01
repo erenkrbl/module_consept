@@ -27,5 +27,10 @@ class UnsplashApi {
     }
 }
 
+export default function photoBring () {
+    const bringPhoto = new UnsplashApi().randomPhotoBring();
+    return bringPhoto;
+}
+
 // Acces key: Hv8xpFm_IY_wWLr4siZu_t14GOTwm4scLfWECWLtfjk
 // secret key: IyUsHQk6z0A2eToxOe9wl94spfCSNjlj4aCtXrexN2I
